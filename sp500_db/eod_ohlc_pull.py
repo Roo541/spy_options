@@ -1,10 +1,10 @@
 import requests
-import eod_key as eod_key
+import keys.config as config
 
 def ohlc(start, end, symbol):
     API_URL_1 = r"https://eodhistoricaldata.com/api/eod/%s" % symbol
     data_1 = {
-                        'api_token': eod_key.eod_key,
+                        'api_token': config.eod_key,
                         'period': 'd',
                         'order':'d',
                         'fmt':'json',

@@ -13,4 +13,3 @@ def fundamental_data(symbol):
     data = r.json()
     
     return data
-print(eod_key.eod_key)
